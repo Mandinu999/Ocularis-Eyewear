@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ocularis
 
-## Getting Started
+A modern e-commerce storefront built with Next.js 14, Tailwind CSS, and Prisma.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **Icons & Animation:** Lucide React, Framer Motion
+- **Database & ORM:** SQLite, Prisma v5
+- **State Management:** React Context API
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Product Catalog:** Grid layout with sorting (price, rating, newest) and category filtering.
+- **Dynamic Search:** Client-side search modal querying a live API route.
+- **Cart System:** Context-based cart state with a slide-out sidebar overlay.
+- **User Profile:** Dashboard showing personal info, recent mock orders, and wishlist items.
+- **Database Integration:** Fully connected to a local SQLite database via Prisma.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Local Setup
 
-## Learn More
+The repository includes a pre-seeded SQLite database (`prisma/dev.db`), so you can get started immediately without setting up external database providers.
 
-To learn more about Next.js, take a look at the following resources:
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Open the app**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `src/app/` - Next.js App Router pages and API routes.
+- `src/components/` - Reusable UI components (ProductCard, Navbar, CartSidebar, etc.).
+- `src/lib/` - Context providers, Prisma client instance, and utility functions.
+- `prisma/` - Prisma schema, database file, and seed script.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
