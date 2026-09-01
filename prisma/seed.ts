@@ -6,14 +6,14 @@ const prisma = new PrismaClient()
 async function main() {
   console.log('Start seeding...')
   
-  // Clear existing data just in case
+  
   await prisma.orderItem.deleteMany()
   await prisma.order.deleteMany()
   await prisma.wishlist.deleteMany()
   await prisma.product.deleteMany()
   await prisma.user.deleteMany()
 
-  // Create mock user
+  
   const user = await prisma.user.create({
     data: {
       name: 'Alex Doe',
@@ -22,7 +22,7 @@ async function main() {
   })
   console.log(`Created user with id: ${user.id}`)
 
-  // Create products
+  
   for (const p of PRODUCTS) {
     const product = await prisma.product.create({
       data: {

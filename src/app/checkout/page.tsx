@@ -20,7 +20,7 @@ export default function CheckoutPage() {
       </Link>
 
       <div className="flex flex-col lg:flex-row gap-12 xl:gap-24">
-        {/* Checkout Form */}
+        
         <div className="flex-1 space-y-10">
           <div>
             <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
@@ -93,7 +93,7 @@ export default function CheckoutPage() {
           </button>
         </div>
 
-        {/* Order Summary */}
+        
         <div className="lg:w-[450px]">
           <div className="bg-zinc-50 p-8 rounded-3xl sticky top-28">
             <h2 className="text-xl font-bold mb-6">Order Summary</h2>

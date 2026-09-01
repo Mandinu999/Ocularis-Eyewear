@@ -22,7 +22,7 @@ export default function ProductClient({ product }: { product: Product }) {
       </div>
 
       <div className="flex flex-col md:flex-row gap-12 lg:gap-24">
-        {/* Product Image */}
+        
         <div className="flex-1 w-full relative aspect-square bg-zinc-100 rounded-3xl overflow-hidden">
           <Image 
             src={product.image} 
@@ -34,7 +34,7 @@ export default function ProductClient({ product }: { product: Product }) {
           />
         </div>
 
-        {/* Product Details */}
+        
         <div className="flex-1 flex flex-col justify-center">
           <div className="mb-2 flex items-center justify-between">
             <span className="text-sm text-zinc-500 uppercase tracking-wider font-semibold">{product.category}</span>

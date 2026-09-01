@@ -58,7 +58,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+      
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-50 bg-white md:hidden flex flex-col">
           <div className="px-6 h-20 flex items-center justify-between border-b border-zinc-200">

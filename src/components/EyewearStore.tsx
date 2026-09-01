@@ -25,7 +25,7 @@ export default function EyewearStore({ products }: Props) {
 
   return (
     <>
-      {/* Hero Section */}
+      
       <section className="pt-12 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         <div className="flex-1 space-y-8">
           <motion.h1 
@@ -76,7 +76,7 @@ export default function EyewearStore({ products }: Props) {
         </div>
       </section>
 
-      {/* Shop Section */}
+      
       <section className="py-20 px-6 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>

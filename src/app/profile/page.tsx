@@ -3,7 +3,7 @@ import ProfileClient from "./ProfileClient";
 import { prisma } from "@/lib/db";
 
 export default async function ProfilePage() {
-  // Fetch the first user as a mock for the currently logged in user
+  
   const user = await prisma.user.findFirst({
     include: {
       orders: true,

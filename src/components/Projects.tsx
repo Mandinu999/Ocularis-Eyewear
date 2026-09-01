@@ -61,7 +61,7 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="glass p-6 rounded-2xl bento-card flex flex-col group relative overflow-hidden"
           >
-            {/* Background glowing blob effect on hover */}
+            
             <div className="absolute -inset-4 bg-gradient-to-r from-primary/0 via-primary/10 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10" />
 
             <div className="flex justify-between items-start mb-6">

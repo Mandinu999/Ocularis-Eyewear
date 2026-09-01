@@ -17,7 +17,7 @@ export default function ProfileClient({ user, orders, wishlistProducts }: Profil
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row gap-12">
-      {/* Sidebar */}
+      
       <div className="w-full md:w-64 flex-shrink-0">
         <div className="bg-zinc-100 rounded-full w-24 h-24 flex items-center justify-center mb-6">
           <User size={40} className="text-zinc-400" />
@@ -62,7 +62,7 @@ export default function ProfileClient({ user, orders, wishlistProducts }: Profil
         </nav>
       </div>
 
-      {/* Main Content */}
+      
       <div className="flex-1 space-y-12">
         {activeTab === "profile" && (
           <section>
