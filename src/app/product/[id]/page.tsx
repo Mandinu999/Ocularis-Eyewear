@@ -3,9 +3,10 @@ import Link from "next/link";
 import { prisma } from "@/lib/db";
 import ProductClient from "./ProductClient";
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
   const product = await prisma.product.findUnique({
-    where: { id: params.id }
+    where: { id: resolvedParams.id }
   });
 
   if (!product) {
